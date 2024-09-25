@@ -15,9 +15,7 @@ build/
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-
-# Ignore application.yml
-src/main/resources/application.yml
+# application.yml은 정보 제거후 업로드 (삭제시 CI실패)
 
 ### Eclipse ###
 .apt_generated
