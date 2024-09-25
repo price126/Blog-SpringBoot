@@ -44,6 +44,6 @@ jobs:
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           application_name: board-springboot
           environment_name: Board-springboot-env
-          version_label: github-action-${{step.current-time.outputs.formattedTime }}
+          version_label: github-action-${{ steps.current-time.outputs.formattedTime }}
           region: ap-northeast-2
-          deployment_package: ./build/libs/${{env.artifact}}
+          deployment_package: ./build/libs/${{ env.artifact }}
