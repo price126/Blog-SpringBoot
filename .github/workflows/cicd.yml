@@ -34,7 +34,7 @@ jobs:
 
       #배포용 패키지 경로 지정
       - name: Set artifact
-        run: echo "artifact=$(ls ./build/libs)" >> $GITHUB.ENV
+        run: echo "artifact=$(ls ./build/libs)" >> $GITHUB_ENV
 
       #빈스토크 배포
       - name: Beanstalk Deploy
